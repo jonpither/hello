@@ -10,7 +10,7 @@
             [lein-pallet-fuz "0.1.0-SNAPSHOT"]]
   :pallet-fuz {:pub-key-path "/Users/jonpither/.ssh/depl_rsa.pub"
                :pri-key-path "/Users/jonpither/.ssh/depl_rsa"
-               :git-url "git@github.com:jonpither/fuzzage.git"
+               :git-url "git@github.com:jonpither/hello.git"
                :user "fuzzer"
                :checkout-dir "fuzzage"
                :node-spec {:image {:os-family :ubuntu
