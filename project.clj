@@ -6,9 +6,9 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [ring "1.1.8"]]
   :ring {:handler hello.core/handler}
-  :profiles {:dev {:plugins [[lein-ring "0.8.3"]
-                             [lein-pallet-fuz "0.1.0-SNAPSHOT"]
-                             [org.cloudhoist/pallet-lein "0.5.1"]]}}
+  :plugins [[lein-ring "0.8.3"]]
+  :profiles { :dep {:plugins [[lein-pallet-fuz "0.1.0-SNAPSHOT"]
+                              [org.cloudhoist/pallet-lein "0.5.1"]]}}
   :pallet-fuz {:pub-key-path "/Users/jonpither/.ssh/depl_rsa.pub"
                :pri-key-path "/Users/jonpither/.ssh/depl_rsa"
                :git-url "git@github.com:jonpither/hello.git"
