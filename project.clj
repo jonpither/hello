@@ -7,7 +7,7 @@
                  [ring "1.1.8"]]
   :ring {:handler hello.core/handler}
   :plugins [[lein-ring "0.8.3"]
-;;            [lein-pallet-fuz "0.1.0-SNAPSHOT"]
+            [lein-pallet-fuz "0.1.2-SNAPSHOT"]
             ]
   :pallet-fuz {:pub-key-path "/Users/jonpither/.ssh/depl_rsa.pub"
                :pri-key-path "/Users/jonpither/.ssh/depl_rsa"
