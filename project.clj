@@ -26,7 +26,7 @@
                         [org.jclouds.driver/jclouds-slf4j "1.5.5"]
                         [org.jclouds.driver/jclouds-jsch "1.5.5"]
 
-                        [lein-pallet-fuz "0.1.2-SNAPSHOT"]]}}
+                        [lein-pallet-fuz "0.1.2"]]}}
 
   :ring {:handler hello.core/handler}
   :plugins [[lein-ring "0.8.3"]])
