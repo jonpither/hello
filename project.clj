@@ -17,7 +17,7 @@
   :profiles {:dev {:plugins [[com.palletops/pallet-lein "0.6.0-beta.7"]]}
              :pallet {:dependencies
                       ;; The latest pallet
-                      [ [com.palletops/pallet "0.8.0-beta.5"]
+                      [ [com.palletops/pallet "0.8.0-beta.4"]
                         [org.cloudhoist/pallet-jclouds "1.5.2"]
 
                         [org.jclouds.provider/aws-ec2 "1.5.5"]
