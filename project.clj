@@ -11,7 +11,7 @@
                  [ring "1.1.8"]]
 
   :plugins [[lein-ring "0.8.3"]
-            [lein-pallet-fuz "0.1.2-SNAPSHOT"]]
+            [lein-pallet-fuz "0.1.2"]]
 
   :pallet-fuz {:pub-key-path "/Users/jonpither/.ssh/depl_rsa.pub"
                :pri-key-path "/Users/jonpither/.ssh/depl_rsa"
