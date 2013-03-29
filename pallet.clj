@@ -1,6 +1,6 @@
-(defproject hello
+(require '[leiningen.pallet-fuz :refer :all])
 
-  (require '[leiningen.pallet-fuz :refer :all])
+(defproject hello
 
   :provider {:aws-ec2 {:node-spec {:image {:os-family :ubuntu
                                            :os-version-matches "12.04"}
@@ -9,10 +9,10 @@
                                    :location {:location-id "us-east-1"}}}}
 
   :groups [(group-spec "fuzgroup"
-                       :extends  {:pub-key-path "/Users/jonpither/.ssh/depl_rsa.pub"
-                                  :pri-key-path "/Users/jonpither/.ssh/depl_rsa"
-                                  :git-url "git@github.com:jonpither/hello.git"
+                       :extends [(fuz {:pub-key-path "/Users/jonpither/.ssh/depl_rsa.pub"
+                                       :pri-key-path "/Users/jonpither/.ssh/depl_rsa"
+                                       :git-url "git@github.com:jonpither/hello.git"
 
-                                  :service-name "bob"
-                                  :group-name "bobbuilder"
-                                  :port 3000})])
+                                       :service-name "bob"
+                                       :group-name "bobbuilder"
+                                       :port 3000})])])
